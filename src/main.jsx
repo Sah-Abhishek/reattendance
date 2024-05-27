@@ -6,11 +6,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ContactUs from './components/ContactUs.jsx'
 import Login from './components/Login.jsx'
 import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/contactus",
-    element: <><Navbar /><ContactUs /></>
+    element: <><div><Navbar /></div><ContactUs /></>
   },
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <><Navbar /> <Login /></>
+  },
+  {
+    path: "/about",
+    element: <><Navbar /> <About /></>
   }
 ])
 

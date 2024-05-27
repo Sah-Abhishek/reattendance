@@ -31,7 +31,8 @@ function App() {
     {/* <Header /> */}
       {/* <RouterProvider router={router} /> */}
       <Navbar />
-      Hi there this is the landing page
+      <div>
+      Hi there this is the landing page</div>
     </>
   )
 }
