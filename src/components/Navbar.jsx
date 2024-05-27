@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from "../assets/logoret.png"
 const Navbar = () => {
 
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
 
         <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
-          <span className='text-3xl text-indigo-600 mr-1 pt-2'><img src={Logo} alt="" /></span>
+          <span className='text-3xl text-indigo-600 mr-1 pt-2'><img className='w-32 h-32' src={Logo} alt="" /></span>
           {/* Reattendance */}
         </div>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
           {
             Links.map((link)=>(
               <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                <a href={link.link} className='text-gray-800 hover:text-indigo-600 duration-500'>{link.name}</a>
+                <NavLink to={link.link} className='text-gray-800 hover:text-indigo-600 duration-500 font-bold text-sm'>{link.name}</NavLink>
               </li>
             ))
           }

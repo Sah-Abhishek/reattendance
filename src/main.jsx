@@ -10,7 +10,7 @@ import Navbar from './components/Navbar.jsx'
 const router = createBrowserRouter([
   {
     path: "/contactus",
-    element: <ContactUs />
+    element: <><Navbar /><ContactUs /></>
   },
   {
     path: "/",
