@@ -16,8 +16,8 @@ const Navbar = () => {
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
 
         <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
-          <span className='text-3xl text-indigo-600 mr-1 pt-2'><img className='w-32 h-32' src={Logo} alt="" /></span>
-          {/* Reattendance */}
+          <span className='w-24 h-24 overflow-hidden' ><img src={Logo} alt="" /></span>
+          Reattendance
         </div>
 
         <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
